@@ -1,0 +1,13 @@
+---
+const msg =
+  import.meta.env.MAINTENANCE_MESSAGE ??
+  "ขณะนี้อยู่ในระหว่างปรับปรุงระบบชั่วคราว ขออภัยในความไม่สะดวก";
+---
+
+<div
+  class="absolute inset-0 flex items-center justify-center bg-black p-8 text-white"
+>
+  <div class="text-center text-2xl font-bold ring-4 ring-yellow-300 p-8">
+    {msg}
+  </div>
+</div>

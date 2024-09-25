@@ -1,0 +1,13 @@
+---
+import MaintenanceAstro from "@/components/common/MaintenanceBox.astro";
+import Layout from "@/layouts/Layout.astro";
+export const prerender = true;
+---
+
+<Layout title="Welcome to Astro.">
+  <!-- Astro (render as static) -->
+  <MaintenanceAstro />
+
+  <!-- React island component (render with js) -->
+  <!-- <MaintenanceBox /> -->
+</Layout>

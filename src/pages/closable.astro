@@ -1,0 +1,13 @@
+---
+import ClosableText from "@/components/common/ClosableText.tsx";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+export const prerender = true;
+---
+
+<BaseLayout>
+  <div
+    class="w-screen min-h-screen flex items-center justify-center dark:bg-neutral-800 dark:text-white"
+  >
+    <ClosableText />
+  </div>
+</BaseLayout>

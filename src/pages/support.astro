@@ -1,0 +1,11 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { version as packageVersion } from "../../package.json";
+export const prerender = true;
+---
+
+<BaseLayout>
+  <div class="flex">
+    App version: {packageVersion}
+  </div>
+</BaseLayout>
